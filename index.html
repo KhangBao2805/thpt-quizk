@@ -17,9 +17,9 @@
   <div class="hero-inner">
     <div class="logo">📚 THPT <span>Quiz Master</span></div>
     <h1>Ôn luyện trắc nghiệm THPT</h1>
-    <p>Toán • Vật lý • Hóa học — mỗi môn 10 câu, chọn 1 đáp án A/B/C/D, nộp bài chấm điểm tự động theo thang 10</p>
+    <p>Toán • Vật lý • Hóa học — mỗi môn 2 bộ × 10 câu, chọn 1 đáp án A/B/C/D, nộp bài chấm điểm tự động theo thang 10</p>
     <div class="stats">
-      <div class="stat"><strong id="statTotal">30</strong><span>câu hỏi</span></div>
+      <div class="stat"><strong id="statTotal">60</strong><span>câu hỏi</span></div>
       <div class="stat"><strong>3</strong><span>môn học</span></div>
       <div class="stat"><strong>10đ</strong><span>thang điểm</span></div>
     </div>
@@ -33,21 +33,21 @@
       <div class="card-icon math">📐</div>
       <h3>Toán học</h3>
       <p>Đại số, Giải tích, Hình học lớp 10–12. Rèn tư duy tính nhanh.</p>
-      <div class="card-meta">10 câu • Thang 10 điểm</div>
+      <div class="card-meta" id="cardCountToan">20 câu • 2 bộ đề</div>
       <button class="btn primary" data-goto="toan">▶ Bắt đầu làm bài</button>
     </div>
     <div class="card">
       <div class="card-icon phys">⚡</div>
       <h3>Vật lý</h3>
       <p>Cơ học, Điện, Dao động, Sóng & Quang học. Nắm công thức là ăn điểm.</p>
-      <div class="card-meta">10 câu • Thang 10 điểm</div>
+      <div class="card-meta" id="cardCountLy">20 câu • 2 bộ đề</div>
       <button class="btn primary" data-goto="ly">▶ Bắt đầu làm bài</button>
     </div>
     <div class="card">
       <div class="card-icon chem">🧪</div>
       <h3>Hóa học</h3>
       <p>Vô cơ & Hữu cơ, bảng tuần hoàn, phản ứng đặc trưng THPT.</p>
-      <div class="card-meta">10 câu • Thang 10 điểm</div>
+      <div class="card-meta" id="cardCountHoa">20 câu • 2 bộ đề</div>
       <button class="btn primary" data-goto="hoa">▶ Bắt đầu làm bài</button>
     </div>
   </section>
@@ -55,15 +55,15 @@
   <nav class="subjects" id="subjectTabs" aria-label="Chuyển môn học">
     <button class="tab active" data-subject="toan">
       <span class="icon">📐</span>
-      <span><b>Toán học</b><i>10 câu • Đại số & Hình</i></span>
+      <span><b>Toán học</b><i>2 bộ đề • Đại số & Hình</i></span>
     </button>
     <button class="tab" data-subject="ly">
       <span class="icon">⚡</span>
-      <span><b>Vật Lý</b><i>10 câu • Cơ • Điện • Sóng</i></span>
+      <span><b>Vật Lý</b><i>2 bộ đề • Cơ • Điện • Sóng</i></span>
     </button>
     <button class="tab" data-subject="hoa">
       <span class="icon">🧪</span>
-      <span><b>Hóa học</b><i>10 câu • Vô cơ & Hữu cơ</i></span>
+      <span><b>Hóa học</b><i>2 bộ đề • Vô cơ & Hữu cơ</i></span>
     </button>
   </nav>
 
@@ -80,6 +80,11 @@
           <div class="progress"><div id="progressBar"></div></div>
         </div>
       </div>
+    </div>
+
+    <div class="setbar">
+      <span class="set-pill" id="setInfo">📚 Bộ 1 / 2</span>
+      <button class="btn ghost" id="btnSet">🔀 Đổi bộ câu hỏi</button>
     </div>
 
     <div class="actions-top">
@@ -117,7 +122,6 @@
 
   <footer>THPT Quiz Master • Chúc bạn 10 điểm! ✨ — Dùng tốt trên 📱 điện thoại, 💻 laptop & PC</footer>
 </main>
-
 <script src="script.js"></script>
 </body>
 </html>
