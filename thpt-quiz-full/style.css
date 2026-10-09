@@ -45,6 +45,9 @@ body{font-family:'Be Vietnam Pro',system-ui,sans-serif;background:#0b1026;color:
 .progress{background:#e6e9f7;border-radius:999px;height:12px;overflow:hidden}
 .progress div{height:100%;width:0;background:linear-gradient(90deg,#00d4ff,#7c5cff,#ff5aa5);transition:width .3s;border-radius:999px}
 .actions-top{display:flex;gap:10px;margin:18px 0;flex-wrap:wrap}
+.setbar{display:flex;gap:10px;margin:18px 0 0;flex-wrap:wrap;align-items:center}
+.set-pill{font-weight:800;font-size:.9rem;background:#0b1026;color:#00f0ff;border-radius:999px;padding:10px 18px;letter-spacing:.3px}
+.setbar .btn.ghost{flex:1;min-width:200px}
 .btn{border:none;border-radius:12px;padding:12px 20px;font-weight:700;font-size:.95rem;cursor:pointer;transition:.18s;font-family:inherit}
 .btn.primary{background:linear-gradient(135deg,#6d5bff,#b14bff);color:#fff;box-shadow:0 8px 24px rgba(109,91,255,.4);width:100%;font-size:1.1rem;padding:16px;letter-spacing:.5px}
 .btn.primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(109,91,255,.55)}
