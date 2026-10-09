@@ -359,7 +359,7 @@ $("btnSet").onclick = () => {
     if (!confirm(`Bộ này đang làm dở ${done}/${curQ().length} câu. Đổi sang bộ 10 câu mới?`)) return;
   }
   newExam();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  document.getElementById("board").scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
 
